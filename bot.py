@@ -3,7 +3,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackContext
 from answering_routing import respond
 
-TELEGRAM_BOT_TOKEN = '7738986713:AAGd1KRjqzUkSRBuwW6PL--S89AoVec1baU'
+TELEGRAM_BOT_TOKEN = 'api'
 
 async def start(update: Update, context: CallbackContext) -> None:
     await update.message.reply_text("Hi there! I'm your chatbot. Send me a message and I'll reply based on my training.")
